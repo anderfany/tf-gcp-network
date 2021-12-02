@@ -1,7 +1,3 @@
-output "name" {
-  value = google_compute_network.this.name  
-}
-
 output "gateway_ipv4" {
   value = google_compute_network.this.gateway_ipv4
 }

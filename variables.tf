@@ -3,6 +3,11 @@ variable "net_name" {
   type        = string
 }
 
+variable "net_description" {
+  type        = string
+  description = "Coloque um nome que aparecerá no dashboard para sua rede"
+}
+
 variable "net_auto_create_subnetworks" {
   type = bool
   description = "Sera criado redes para todas regioes"
