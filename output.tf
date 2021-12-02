@@ -1,9 +1,11 @@
 output "name" {
-  value       = google_compute_network.this[*].name
-  description = "Nome da rede"
+  value = google_compute_network.this.name  
 }
 
-output "instance_id" {
-  value       = google_compute_network.this[*].instance_id
-  description = "ID da rede"
+output "gateway_ipv4" {
+  value = google_compute_network.this.gateway_ipv4
+}
+
+output "self_link" {
+  value = google_compute_network.this.self_link
 }
